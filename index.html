@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yuvraj Singh — Yuvraj Web Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+<!-- Page transition overlay -->
+<div id="pageTransition">
+  <div class="pt-panel"></div>
+  <div class="pt-panel"></div>
+  <div class="pt-panel"></div>
+</div>
+
+<div id="loader">
+  <div class="loader-mark mono">YUVRAJ_WEB_SERVICES</div>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<canvas id="particles"></canvas>
+<div id="glow"></div>
+
+<!-- Custom cursor (desktop only) -->
+<div id="cursorDot"></div>
+<div id="cursorRing"></div>
+
+<nav id="mainNav">
+  <div class="logo">Yuvraj<span>.</span>dev</div>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Journey</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div id="themeToggle">🌙</div>
+</nav>
+
+<section class="hero">
+  <div class="hero-left">
+    <div class="eyebrow mono">CHAPRA, BIHAR · AVAILABLE FOR WORK</div>
+    <h1>Hi, I'm <span class="accent">Yuvraj</span></h1>
+    <h2 class="hero-headline">I Build Digital Experiences.</h2>
+    <div class="role-rotator mono">
+      <span class="role-label">&gt;</span>
+      <span id="roleText"></span>
+    </div>
+    <p class="sub">Self-taught developer from Chapra, Bihar — building websites, AI tools & automations for local businesses, entirely from my phone.</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View Projects →</a>
+      <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="phone">
+      <div class="phone-screen">
+        <div class="phone-topbar"><span></span><span></span><span></span></div>
+        <div id="codeLines" class="mono"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider" data-fill="var(--bg)">
+  <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,64 C240,120 480,0 720,32 C960,64 1200,120 1440,48 L1440,120 L0,120 Z"></path></svg>
+</div>
+
+<section id="services">
+  <div class="section-head reveal">
+    <div class="eyebrow mono">WHAT I DO</div>
+    <h2>Services</h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-ic">🌐</div>
+      <h3>Website Development</h3>
+      <p>Fast, single-page and multi-page websites for local shops and businesses — built to convert visitors into customers.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-ic">🤖</div>
+      <h3>AI Tool Integration</h3>
+      <p>Gemini / GPT powered tools — chatbots, message generators, and automations wired into real business workflows.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-ic">📊</div>
+      <h3>Business Automation</h3>
+      <p>Excel + VBA automation systems that connect to AI APIs, even on older systems like Excel 2007 / Windows 7.</p>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-ic">💬</div>
+      <h3>WhatsApp AI Bots</h3>
+      <p>WhatsApp Cloud API agents for order-taking, customer replies, and multi-tone AI message generation.</p>
+    </div>
+  </div>
+</section>
+
+<div class="wave-divider flip" data-fill="var(--surface)">
+  <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,64 C240,120 480,0 720,32 C960,64 1200,120 1440,48 L1440,120 L0,120 Z"></path></svg>
+</div>
+
+<section id="skills" style="background:var(--surface);">
+  <div class="section-head reveal">
+    <div class="eyebrow mono">TOOLKIT</div>
+    <h2>Skills</h2>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card reveal"><span class="ic">🧱</span><div class="name">HTML</div><div class="tag">structure</div></div>
+    <div class="skill-card reveal"><span class="ic">🎨</span><div class="name">CSS</div><div class="tag">design</div></div>
+    <div class="skill-card reveal"><span class="ic">⚡</span><div class="name">JavaScript</div><div class="tag">logic</div></div>
+    <div class="skill-card reveal"><span class="ic">🐙</span><div class="name">GitHub</div><div class="tag">version control</div></div>
+    <div class="skill-card reveal"><span class="ic">🚀</span><div class="name">Netlify</div><div class="tag">deployment</div></div>
+    <div class="skill-card reveal"><span class="ic">🤖</span><div class="name">Gemini API</div><div class="tag">AI integration</div></div>
+    <div class="skill-card reveal"><span class="ic">📊</span><div class="name">Excel VBA</div><div class="tag">automation</div></div>
+    <div class="skill-card reveal" style="opacity:.6"><span class="ic">🔮</span><div class="name">React · Node</div><div class="tag">next up</div></div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-head reveal">
+    <div class="eyebrow mono">SELECTED WORK</div>
+    <h2>Projects</h2>
+  </div>
+  <div class="projects-grid">
+
+    <div class="project-card reveal">
+      <div class="browser-mock">
+        <div class="browser-bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <div class="browser-url mono">suhagchuri.store</div>
+        </div>
+        <div class="browser-body" style="--tc1:#7a3b0f; --tc2:#f5a623;">
+          <div class="bm-nav"></div>
+          <div class="bm-hero"><span>💍</span></div>
+          <div class="bm-line w60"></div>
+          <div class="bm-line w40"></div>
+          <div class="bm-btn"></div>
+        </div>
+      </div>
+      <div class="project-body">
+        <h3>Suhag Churi Store</h3>
+        <p>Premium single-page e-commerce site for a bridal bangles shop — catalog, product showcase, and order flow.</p>
+        <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span><span>E-commerce</span></div>
+        <div class="project-links"><a href="#">Live Demo →</a><a href="#">Details →</a></div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="browser-mock">
+        <div class="browser-bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <div class="browser-url mono">yantrammobile.in</div>
+        </div>
+        <div class="browser-body" style="--tc1:#0f3b3b; --tc2:#3ed6b5;">
+          <div class="bm-nav"></div>
+          <div class="bm-hero"><span>📱</span></div>
+          <div class="bm-line w60"></div>
+          <div class="bm-line w40"></div>
+          <div class="bm-btn"></div>
+        </div>
+      </div>
+      <div class="project-body">
+        <h3>Yantram Mobile</h3>
+        <p>Mobile phone e-commerce website with shop, cart, and WhatsApp ordering flow for a local mobile shop.</p>
+        <div class="project-tags"><span>HTML</span><span>Cart Flow</span><span>WhatsApp API</span></div>
+        <div class="project-links"><a href="#">Live Demo →</a><a href="#">Details →</a></div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="browser-mock">
+        <div class="browser-bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <div class="browser-url mono">wa-ai-generator.app</div>
+        </div>
+        <div class="browser-body" style="--tc1:#1a2a52; --tc2:#6ea8fe;">
+          <div class="bm-nav"></div>
+          <div class="bm-hero"><span>💬</span></div>
+          <div class="bm-line w60"></div>
+          <div class="bm-line w40"></div>
+          <div class="bm-btn"></div>
+        </div>
+      </div>
+      <div class="project-body">
+        <h3>WhatsApp AI Message Generator</h3>
+        <p>Multi-tone AI message generator with templates for Yuvraj Web Services, Suhag Churi & Yantram Mobile.</p>
+        <div class="project-tags"><span>Gemini API</span><span>JS</span><span>Templates</span></div>
+        <div class="project-links"><a href="#">Live Demo →</a><a href="#">Details →</a></div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="browser-mock">
+        <div class="browser-bar">
+          <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+          <div class="browser-url mono">excel-ai-bridge.xlsm</div>
+        </div>
+        <div class="browser-body" style="--tc1:#3b2a0f; --tc2:#f5a623;">
+          <div class="bm-nav"></div>
+          <div class="bm-hero"><span>📈</span></div>
+          <div class="bm-line w60"></div>
+          <div class="bm-line w40"></div>
+          <div class="bm-btn"></div>
+        </div>
+      </div>
+      <div class="project-body">
+        <h3>Excel VBA + Gemini AI Automation</h3>
+        <p>AI automation system for Excel 2007 / Windows 7 using VBA + Gemini API, with a Python bridge fallback.</p>
+        <div class="project-tags"><span>VBA</span><span>Gemini API</span><span>Python</span></div>
+        <div class="project-links"><a href="#">Details →</a></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="stats" style="background:var(--surface);">
+  <div class="section-head reveal">
+    <div class="eyebrow mono">TRACK RECORD</div>
+    <h2>By the numbers</h2>
+  </div>
+  <div class="stats">
+    <div class="stat-card reveal"><div class="stat-num" data-target="10">0</div><div class="stat-label">Projects Shipped</div></div>
+    <div class="stat-card reveal"><div class="stat-num" data-target="5">0</div><div class="stat-label">Local Clients</div></div>
+    <div class="stat-card reveal"><div class="stat-num" data-target="100">0</div><div class="stat-label">% Responsive</div></div>
+    <div class="stat-card reveal"><div class="stat-num" data-target="0">📍</div><div class="stat-label">Chapra, Bihar</div></div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="section-head reveal">
+    <div class="eyebrow mono">HOW I GOT HERE</div>
+    <h2>Experience Timeline</h2>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <span class="tl-date mono">2025</span>
+        <h3>Started self-teaching web development</h3>
+        <p>Picked up HTML, CSS & JavaScript on a mobile phone — no laptop, just Acode and persistence.</p>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <span class="tl-date mono">Early 2026</span>
+        <h3>First client project — Yantram Mobile</h3>
+        <p>Built and pitched a full mobile e-commerce site to a local mobile shop, complete with cart & WhatsApp ordering.</p>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <span class="tl-date mono">Mid 2026</span>
+        <h3>Suhag Churi Store & AI tools</h3>
+        <p>Delivered a premium e-commerce build for a bridal bangles client, plus a WhatsApp AI generator and Excel + Gemini automation system.</p>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="tl-dot"></div>
+      <div class="tl-content">
+        <span class="tl-date mono">Now</span>
+        <h3>Looking ahead</h3>
+        <p>Seeking a frontend internship while building "Yuvraj Web Services" into a proper local-business digital studio.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" style="background:var(--surface);">
+  <div class="section-head reveal">
+    <div class="eyebrow mono">CLIENT FEEDBACK</div>
+    <h2>Testimonials</h2>
+  </div>
+  <div class="testimonial-grid">
+    <div class="testimonial-card reveal">
+      <div class="quote-mark">"</div>
+      <p>Humari bangles ki website bilkul waisi hi bani jaisi hum chahte the — customers ab WhatsApp pe direct order karte hain.</p>
+      <div class="t-author"><span class="t-avatar">💍</span><div><strong>Suhag Churi Store</strong><span>Bridal Bangles, Chapra</span></div></div>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="quote-mark">"</div>
+      <p>Yuvraj ne humari mobile shop ka poora online setup kar diya — cart se lekar WhatsApp order tak, sab smooth hai.</p>
+      <div class="t-author"><span class="t-avatar">📱</span><div><strong>Yantram Mobile</strong><span>Mobile Shop, Chapra</span></div></div>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="quote-mark">"</div>
+      <p>AI message tool ne humara reply time kaafi kam kar diya. Bahut helpful raha customers ko jaldi respond karne mein.</p>
+      <div class="t-author"><span class="t-avatar">💬</span><div><strong>Local Business Client</strong><span>Chapra, Bihar</span></div></div>
+    </div>
+  </div>
+  <p class="testimonial-note mono">* placeholder quotes — swap in real client feedback anytime</p>
+</section>
+
+<div class="wave-divider" data-fill="var(--bg)">
+  <svg viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,64 C240,0 480,120 720,64 C960,8 1200,80 1440,32 L1440,120 L0,120 Z"></path></svg>
+</div>
+
+<section id="contact">
+  <div class="contact-wrap reveal">
+    <h2>Let's build something.</h2>
+    <p>Open to freelance work &amp; frontend internships.</p>
+    <div class="contact-links">
+      <a href="https://wa.me/" target="_blank">💬 WhatsApp</a>
+      <a href="mailto:yuvrajwebservice@gmail.com">✉️ Email</a>
+      <a href="#" target="_blank">🐙 GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <div class="logo">Yuvraj<span>.</span>dev</div>
+      <p>Building digital experiences from Chapra, Bihar — one project at a time.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigate</h4>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Journey</a>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <a href="mailto:yuvrajwebservice@gmail.com">Email</a>
+      <a href="https://wa.me/">WhatsApp</a>
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Yuvraj Singh · Yuvraj Web Services</span>
+    <span>Built on mobile, in <span class="accent-text">Chapra, Bihar</span></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
